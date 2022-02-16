@@ -1,1 +1,9 @@
 <h2>User's posts</h2>
+
+<h3>USER {{username}} has the following posts:</h3>
+
+<ol>
+  {{#each posts}}
+    <h3><a href="/post/details{{_id}}">click here to {{title}}</a></h3>
+  {{/each}}
+</ol>
